@@ -3,76 +3,163 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>سيريا كلين | Syria Clean</title>
+
+<title>Syria Clean | شركة سيريا كلين</title>
 
 <style>
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f2f7f8;
+    font-family: Arial, Tahoma, sans-serif;
+    background: #f4f8fa;
     color: #17323b;
 }
 
 .container {
-    max-width: 700px;
+    max-width: 900px;
     margin: auto;
-    padding: 20px;
+    padding: 18px;
 }
 
+/* الواجهة */
 .header {
     background: linear-gradient(135deg, #087582, #20aaa0);
     color: white;
     text-align: center;
-    padding: 35px 20px;
-    border-radius: 22px;
+    padding: 45px 20px;
+    border-radius: 0 0 28px 28px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.12);
 }
 
 .header h1 {
     margin: 0 0 8px;
-    font-size: 34px;
+    font-size: 38px;
 }
 
 .header h2 {
     margin: 0;
-    font-size: 24px;
+    font-size: 28px;
+    direction: ltr;
 }
 
+.header p {
+    margin: 12px 0 0;
+    font-size: 19px;
+}
+
+/* الأقسام */
 .card {
     background: white;
-    margin-top: 18px;
-    padding: 20px;
-    border-radius: 18px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    margin-top: 22px;
+    padding: 24px;
+    border-radius: 22px;
+    box-shadow: 0 5px 22px rgba(0,0,0,0.07);
 }
 
+.card-title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 22px;
+    color: #087582;
+    font-size: 28px;
+}
+
+/* التعريف */
+.about {
+    text-align: center;
+    line-height: 2;
+    font-size: 18px;
+}
+
+/* المنتجات */
 .product {
-    border: 1px solid #dce7e9;
-    border-radius: 14px;
-    padding: 16px;
-    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 8px;
+    border-bottom: 1px solid #e1eaed;
 }
 
-.product h3 {
-    margin: 0 0 6px;
-    font-size: 20px;
+.product:last-child {
+    border-bottom: none;
 }
 
+.product-name {
+    flex: 1;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 48px;
+    background: #20aaa0;
+    flex-shrink: 0;
+}
+
+.product-size {
+    width: 95px;
+    text-align: center;
+    color: #087582;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* التواصل */
 .whatsapp {
     display: block;
     background: #168b55;
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 15px;
-    border-radius: 14px;
+    padding: 16px;
+    border-radius: 15px;
     font-size: 19px;
     font-weight: bold;
 }
 
+/* الفوتر */
 .footer {
     text-align: center;
-    margin: 25px 0;
+    margin: 28px 0 10px;
     color: #718087;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .header h2 {
+        font-size: 23px;
+    }
+
+    .product {
+        gap: 10px;
+    }
+
+    .product-name {
+        font-size: 16px;
+    }
+
+    .product-size {
+        width: 75px;
+        font-size: 15px;
+    }
+
+    .vertical-line {
+        height: 45px;
+    }
+
+    .card {
+        padding: 18px 14px;
+    }
 }
 </style>
 </head>
@@ -89,42 +176,99 @@ body {
 </div>
 
 <div class="card">
-    <h2>منتجاتنا | Our Products</h2>
 
-    <div class="product">
-        <h3>سائل متعدد الاستعمالات إكسترا</h3>
-        <p>4 لتر</p>
-        <p>Extra Multi-Purpose Cleaner — 4 L</p>
+    <h2 class="card-title">من نحن | About Us</h2>
+
+    <div class="about">
+        <p>
+        شركة سيريا كلين لصناعة وتجارة المنظفات،
+        نقدم مجموعة من منتجات التنظيف والعناية المنزلية
+        بجودة واهتمام لتلبية احتياجات المنازل والأعمال،
+        مع الحرص على تقديم منتجات عملية ومتنوعة.
+        </p>
     </div>
 
-    <div class="product">
-        <h3>ماء جافيل</h3>
-        <p>4 لتر</p>
-        <p>Bleach — 4 L</p>
-    </div>
-
-    <div class="product">
-        <h3>منظف عام</h3>
-        <p>General Cleaner</p>
-    </div>
-
-    <div class="product">
-        <h3>صابون يدين</h3>
-        <p>Hand Soap</p>
-    </div>
 </div>
 
 <div class="card">
-    <h2>تواصل معنا | Contact Us</h2>
+
+    <h2 class="card-title">منتجاتنا | Our Products</h2>
+
+    <div class="product">
+        <div class="product-name">
+            فلاش سيريا كلين
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="product-size">
+            4000 مل
+        </div>
+    </div>
+
+    <div class="product">
+        <div class="product-name">
+            سائل متعدد الاستعمالات إكسترا سيريا كلين
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="product-size">
+            4000 مل
+        </div>
+    </div>
+
+    <div class="product">
+        <div class="product-name">
+            سائل متعدد الاستعمالات سيريا كلين
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="product-size">
+            3000 مل
+        </div>
+    </div>
+
+    <div class="product">
+        <div class="product-name">
+            ماء جافيل سيريا كلين
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="product-size">
+            4000 مل
+        </div>
+    </div>
+
+    <div class="product">
+        <div class="product-name">
+            صابون يدين سيريا كلين
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="product-size">
+            4000 مل
+        </div>
+    </div>
+
+</div>
+
+<div class="card">
+
+    <h2 class="card-title">تواصل معنا | Contact Us</h2>
 
     <a class="whatsapp"
        href="https://wa.me/963937304318">
        واتساب: 0937304318
     </a>
+
 </div>
 
 <div class="footer">
-    © Syria Clean | شركة سيريا كلين
+    © Syria Clean | شركة سيريا كلين لصناعة وتجارة المنظفات
 </div>
 
 </div>
