@@ -3,275 +3,139 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Syria Clean | شركة سيريا كلين</title>
+<title>غولد بور | GOLD POWER</title>
 
 <style>
-* {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
     font-family: Arial, Tahoma, sans-serif;
-    background: #f4f8fa;
-    color: #17323b;
+    background: #f4f6f8;
+    color: #222;
+}
+
+header {
+    background: linear-gradient(135deg, #b8860b, #f5d76e);
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 34px;
+}
+
+header p {
+    margin: 8px 0 0;
+    font-size: 18px;
 }
 
 .container {
-    max-width: 900px;
-    margin: auto;
-    padding: 18px;
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 0 15px;
 }
 
-/* الواجهة */
-.header {
-    background: linear-gradient(135deg, #087582, #20aaa0);
-    color: white;
-    text-align: center;
-    padding: 45px 20px;
-    border-radius: 0 0 28px 28px;
-    box-shadow: 0 6px 25px rgba(0,0,0,0.12);
-}
-
-.header h1 {
-    margin: 0 0 8px;
-    font-size: 38px;
-}
-
-.header h2 {
-    margin: 0;
-    font-size: 28px;
-    direction: ltr;
-}
-
-.header p {
-    margin: 12px 0 0;
-    font-size: 19px;
-}
-
-/* الأقسام */
-.card {
+.company {
     background: white;
-    margin-top: 22px;
-    padding: 24px;
-    border-radius: 22px;
-    box-shadow: 0 5px 22px rgba(0,0,0,0.07);
-}
-
-.card-title {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 22px;
-    color: #087582;
-    font-size: 28px;
-}
-
-/* التعريف */
-.about {
-    text-align: center;
-    line-height: 2;
-    font-size: 18px;
-}
-
-/* المنتجات */
-.product {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 18px 8px;
-    border-bottom: 1px solid #e1eaed;
-}
-
-.product:last-child {
-    border-bottom: none;
-}
-
-.product-name {
-    flex: 1;
-    font-size: 19px;
-    font-weight: bold;
-    line-height: 1.6;
-}
-
-.vertical-line {
-    width: 2px;
-    height: 48px;
-    background: #20aaa0;
-    flex-shrink: 0;
-}
-
-.product-size {
-    width: 95px;
-    text-align: center;
-    color: #087582;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* التواصل */
-.whatsapp {
-    display: block;
-    background: #168b55;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 16px;
     border-radius: 15px;
+    padding: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.company h2 {
+    color: #b8860b;
+    margin-top: 0;
+}
+
+.products-title {
+    text-align: center;
+    color: #b8860b;
+    margin: 25px 0 15px;
+}
+
+.product {
+    background: white;
+    border-radius: 15px;
+    padding: 18px;
+    margin-bottom: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.product h3 {
+    margin: 0;
+    color: #333;
     font-size: 19px;
+}
+
+.product .size {
+    display: inline-block;
+    margin-top: 8px;
+    background: #f5d76e;
+    color: #5a4300;
+    padding: 5px 12px;
+    border-radius: 20px;
     font-weight: bold;
 }
 
-/* الفوتر */
-.footer {
+footer {
     text-align: center;
-    margin: 28px 0 10px;
-    color: #718087;
+    padding: 25px;
+    color: #777;
     font-size: 14px;
-}
-
-@media (max-width: 600px) {
-
-    .header h1 {
-        font-size: 30px;
-    }
-
-    .header h2 {
-        font-size: 23px;
-    }
-
-    .product {
-        gap: 10px;
-    }
-
-    .product-name {
-        font-size: 16px;
-    }
-
-    .product-size {
-        width: 75px;
-        font-size: 15px;
-    }
-
-    .vertical-line {
-        height: 45px;
-    }
-
-    .card {
-        padding: 18px 14px;
-    }
 }
 </style>
 </head>
 
 <body>
 
+<header>
+    <h1>غولد بور</h1>
+    <p>GOLD POWER</p>
+</header>
+
 <div class="container">
 
-<div class="header">
-    <h1>شركة سيريا كلين</h1>
-    <h2>Syria Clean</h2>
-    <p>لصناعة وتجارة المنظفات</p>
-    <p>For Manufacturing & Trading Detergents</p>
-</div>
-
-<div class="card">
-
-    <h2 class="card-title">من نحن | About Us</h2>
-
-    <div class="about">
-        <p>
-        شركة سيريا كلين لصناعة وتجارة المنظفات،
-        نقدم مجموعة من منتجات التنظيف والعناية المنزلية
-        بجودة واهتمام لتلبية احتياجات المنازل والأعمال،
-        مع الحرص على تقديم منتجات عملية ومتنوعة.
-        </p>
+    <div class="company">
+        <h2>معلومات الشركة</h2>
+        <p><strong>شركة غولد بور لتجارة وصناعة المنظفات</strong></p>
+        <p>العنوان: سوريا</p>
     </div>
 
-</div>
-
-<div class="card">
-
-    <h2 class="card-title">منتجاتنا | Our Products</h2>
+    <h2 class="products-title">منتجاتنا</h2>
 
     <div class="product">
-        <div class="product-name">
-            فلاش سيريا كلين
-        </div>
-
-        <div class="vertical-line"></div>
-
-        <div class="product-size">
-            4000 مل
-        </div>
+        <h3>سائل غسيل الملابس السوداء غولد بور</h3>
+        <span class="size">1 لتر</span>
     </div>
 
     <div class="product">
-        <div class="product-name">
-            سائل متعدد الاستعمالات إكسترا سيريا كلين
-        </div>
-
-        <div class="vertical-line"></div>
-
-        <div class="product-size">
-            4000 مل
-        </div>
+        <h3>سائل غسيل الملابس الملونة غولد بور</h3>
+        <span class="size">1 لتر</span>
     </div>
 
     <div class="product">
-        <div class="product-name">
-            سائل متعدد الاستعمالات سيريا كلين
-        </div>
-
-        <div class="vertical-line"></div>
-
-        <div class="product-size">
-            3000 مل
-        </div>
+        <h3>سائل متعدد الاستعمالات إكسترا غولد بور</h3>
+        <span class="size">4 لتر</span>
     </div>
 
     <div class="product">
-        <div class="product-name">
-            ماء جافيل سيريا كلين
-        </div>
-
-        <div class="vertical-line"></div>
-
-        <div class="product-size">
-            4000 مل
-        </div>
+        <h3>ماء جافيل غولد بور</h3>
+        <span class="size">4 لتر</span>
     </div>
 
     <div class="product">
-        <div class="product-name">
-            صابون يدين سيريا كلين
-        </div>
-
-        <div class="vertical-line"></div>
-
-        <div class="product-size">
-            4000 مل
-        </div>
+        <h3>منظف ومطهر الأسطح والحمامات غولد بور</h3>
+        <span class="size">4 لتر</span>
     </div>
 
 </div>
 
-<div class="card">
-
-    <h2 class="card-title">تواصل معنا | Contact Us</h2>
-
-    <a class="whatsapp"
-       href="https://wa.me/963937304318">
-       واتساب: 0937304318
-    </a>
-
-</div>
-
-<div class="footer">
-    © Syria Clean | شركة سيريا كلين لصناعة وتجارة المنظفات
-</div>
-
-</div>
+<footer>
+    © غولد بور | GOLD POWER
+</footer>
 
 </body>
 </html>
